@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculo Online</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="inf-pessoais-container">
+        <h1>Cadastre seu curriculo</h1>
+        <form id="registro-form">
+            <div class="main-box">
+            <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="half-box">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="select">
+                <label>Nacionalidade</label>
+                <select name="select">
+                    <option value="Brasileiro">Brasileiro</option>
+                    <option value="Argentino">Argentino</option>
+                    <option value="Paraguaio">Paraguaio</option>
+                    <option value="Angolano">Angolano</option>
+                    <option value="Uruguaio">Uruguaio</option>
+                    <option value="Boliviano">Boliviano</option>
+                </select>
+            </div>
+            <div class="date">
+                <label for="data-nascimento">Informe sua data de Nascimento</label>
+                <input type="date" name="data-nascimento" id="data-nascimento">
+            </div>
+            <div class="select">
+                <label>Estado Civil</label>
+                <select name="select">
+                    <option value="Casado">Casado</option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Uniao Estavel">Uniao Estavel</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Viuvo">Viuvo</option>
+                </select>
+            </div>
+            <div class="half-box">
+                <label for="endereco">Endereco</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereco">
+            </div>
+            <div class="half-box">
+                <label for="numero-predial">Numero</label>
+                <input type="number" name="numero" id="numero-predial" placeholder="Numero predial">
+            </div>
+            <div class="half-box">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
+            </div>
+            <div class="half-box">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+            </div>
+            <div class="select">
+                <label>Estado</label>
+                <select name="select">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceara</option>
+                    <option value="distrito federal">Distrito Federal</option>
+                    <option value="espirito santo">Espírito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="mato grosso">Mato Grosso</option>
+                    <option value="mato grosso do sul">Mato Gorsso do Sul</option>
+                    <option value="minas gerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernanbuco">Pernambuco</option>
+                    <option value="paui">Piauí</option>
+                    <option value="rio de janeiro">Rio de Janeiro</option>
+                    <option value="rio grande do norte">Rio Grande do Norte</option>
+                    <option value="rio grande do sul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santa catarina">Santa Catarina</option>
+                    <option value="sao paulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                </select>
+            </div>
+            <div class="half-box">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="99-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+            </div>
+            <div class="half-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="half-box">
+                <label for="linkedin">Linkedin</label>
+                <input type="text" name="linkedin" id="linkedin" placeholder="Digite a URL do seu linkedin">
+            </div>
+            <div class="half-box">
+                <label for="github">Github</label>
+                <input type="text" name="github" id="github" placeholder="Digite a URL do seu github">
+            </div>
+        </form>
+    </div>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
