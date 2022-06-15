@@ -47,155 +47,179 @@
 </script>
 
 <body>
-    <div class="box">
-        <form action="">
-            <fieldset>
-                <legend><b>Curriculo Online</b></legend>
-                <div class="inputBox">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
-                </div>
-                <div class="inputBox">
-                    <label for="lastname">Sobrenome</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
-                </div>
-                <p>Sexo:</p>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label>
+<div class="box">
+    <form action="">
+        <fieldset>
+            <legend><b>Curriculo Online</b></legend>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="name" class="inputUser" id="name">
+                <label for="name" class="labelInput">Nome</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="lastname" id="lastname" class="inputUser">
+                <label for="lastname" class="labelInput">Sobrenome</label>
+            </div>
+            <br><br>
+            <p>Sexo:</p>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="outro" name="genero" value="outro" required>
+            <label for="outro">Outro</label>
+            <br><br>
+            <div class="select">
+                <label>Nacionalidade</label>
+                <select name="select">
+                    <option value="Brasileiro">Brasileiro</option>
+                    <option value="Argentino">Argentino</option>
+                    <option value="Paraguaio">Paraguaio</option>
+                    <option value="Angolano">Angolano</option>
+                    <option value="Uruguaio">Uruguaio</option>
+                    <option value="Boliviano">Boliviano</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="date" name="data-nascimento" id="data-nascimento">
+                <label for="data-nascimento">Data de Nascimento</label>
+            </div>
+            <br><br>
+            <div class="select">
+                <label>Estado Civil</label>
+                <select name="select">
+                    <option value="Casado">Casado</option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Uniao Estavel">Uniao Estavel</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Viuvo">Viuvo</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="cidade" id="cidade" class="inputUser">
+                <label for="cidade" class="labelInput">Cidade</label>
+            </div>
+            <br><br>
+            <div class="select">
+                <label>Estado</label>
+                <select name="select">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceara</option>
+                    <option value="distrito federal">Distrito Federal</option>
+                    <option value="espirito santo">Espírito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="mato grosso">Mato Grosso</option>
+                    <option value="mato grosso do sul">Mato Gorsso do Sul</option>
+                    <option value="minas gerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernanbuco">Pernambuco</option>
+                    <option value="paui">Piauí</option>
+                    <option value="rio de janeiro">Rio de Janeiro</option>
+                    <option value="rio grande do norte">Rio Grande do Norte</option>
+                    <option value="rio grande do sul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santa catarina">Santa Catarina</option>
+                    <option value="sao paulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="endereco" id="endereco" class="inputUser">
+                <label for="endereco" class="labelInput">Endereco</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="number" name="numero" id="numero-predial" class="inputUser">
+                <label for="numero-predial" class="labelInput">Numero</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="bairro" id="bairro" class="inputUser">
+                <label for="bairro" class="labelInput">Bairro</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="telefone" class="inputUser" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                <label for="telefone" class="labelInput">Telefone</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="email" name="email" id="email" class="inputUser">
+                <label for="email" class="labelInput">E-mail</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="linkedin" id="linkedin" class="inputUser">
+                <label for="linkedin" class="labelInput">Linkedin</label>
+            </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="github" id="github" class="inputUser">
+                <label for="github" class="labelInput">Github</label>
+            </div>
+            <br><br>
+            <form name="formacao" label="Formacao Academica" class="formFormacao" onsubmit="return(validate());" action="teste.php"
+                  method="POST">
 
-                <div class="select">
-                    <label>Nacionalidade</label>
-                    <select name="select">
-                        <option value="Brasileiro">Brasileiro</option>
-                        <option value="Argentino">Argentino</option>
-                        <option value="Paraguaio">Paraguaio</option>
-                        <option value="Angolano">Angolano</option>
-                        <option value="Uruguaio">Uruguaio</option>
-                        <option value="Boliviano">Boliviano</option>
+                <div id="formFormacao">
+                    <input type="text" name="curso[]" class="inputUser">
+                    <label class="labelFormFormacao">Curso</label>
+                    <br><br>
+                    <input type="text" name="instituicao[]" class="inputUser">
+                    <label class="labelFormFormacao">Instituacao</label>
+                    <br><br>
+                    <label>Status</label>
+                    <select name="selectFormacao">
+                        <option value="Cursando">Cursando</option>
+                        <option value="Concluido">Concluido</option>
                     </select>
+                    <br><br>
+                    <input type="button" name="add" value="Adicionar" onclick="addLineFormacao()"><br>
                 </div>
-                <div class="inputBox">
-                    <label for="data-nascimento">Data de Nascimento</label>
-                    <input type="date" name="data-nascimento" id="data-nascimento">
-                </div>
-                <div class="select">
-                    <label>Estado Civil</label>
-                    <select name="select">
-                        <option value="Casado">Casado</option>
-                        <option value="Solteiro">Solteiro</option>
-                        <option value="Uniao Estavel">Uniao Estavel</option>
-                        <option value="Divorciado">Divorciado</option>
-                        <option value="Viuvo">Viuvo</option>
-                    </select>
-                </div>
-                <div class="inputBox">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
-                </div>
-                <div class="select">
-                    <label>Estado</label>
-                    <select name="select">
-                        <option value="acre">Acre</option>
-                        <option value="alagoas">Alagoas</option>
-                        <option value="amapa">Amapá</option>
-                        <option value="amazonas">Amazonas</option>
-                        <option value="bahia">Bahia</option>
-                        <option value="ceara">Ceara</option>
-                        <option value="distrito federal">Distrito Federal</option>
-                        <option value="espirito santo">Espírito Santo</option>
-                        <option value="goias">Goiás</option>
-                        <option value="maranhao">Maranhão</option>
-                        <option value="mato grosso">Mato Grosso</option>
-                        <option value="mato grosso do sul">Mato Gorsso do Sul</option>
-                        <option value="minas gerais">Minas Gerais</option>
-                        <option value="para">Pará</option>
-                        <option value="paraiba">Paraíba</option>
-                        <option value="parana">Paraná</option>
-                        <option value="pernanbuco">Pernambuco</option>
-                        <option value="paui">Piauí</option>
-                        <option value="rio de janeiro">Rio de Janeiro</option>
-                        <option value="rio grande do norte">Rio Grande do Norte</option>
-                        <option value="rio grande do sul">Rio Grande do Sul</option>
-                        <option value="rondonia">Rondônia</option>
-                        <option value="roraima">Roraima</option>
-                        <option value="santa catarina">Santa Catarina</option>
-                        <option value="sao paulo">São Paulo</option>
-                        <option value="sergipe">Sergipe</option>
-                    </select>
-                    <div class="inputBox">
-                        <label for="endereco">Endereco</label>
-                        <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereco">
-                    </div>
-                    <div class="inputBox">
-                        <label for="numero-predial">Numero</label>
-                        <input type="number" name="numero" id="numero-predial" placeholder="Numero predial">
-                    </div>
-                    <div class="inputBox">
-                        <label for="bairro">Bairro</label>
-                        <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
-                    </div>
-                    <div class="inputBox">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" id="telefone" placeholder="99-99999-9999"
-                            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
-                    </div>
-                    <div class="inputBox">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-                    </div>
-                    <div class="inputBox">
-                        <label for="linkedin">Linkedin</label>
-                        <input type="text" name="linkedin" id="linkedin" placeholder="Digite a URL do seu linkedin">
-                    </div>
-                    <div class="inputBox">
-                        <label for="github">Github</label>
-                        <input type="text" name="github" id="github" placeholder="Digite a URL do seu github">
-                    </div>
-                    <form name="formacao" label="Formacao Academica" onsubmit="return(validate());" action="teste.php"
-                        method="POST">
+            </form>
+            <br><br>
+            <form name="experiencia" label="Experiencia Profissional" class="formExperiencia" onsubmit="return(validate());" action="teste.php"
+                  method="POST">
 
-                        <div id="formFormacao">
-                            <label>Curso</label>
-                            <input type="text" name="curso[]">
-                            <label>Instituacao</label>
-                            <input type="text" name="instituicao[]">
-                            <label>Status</label>
-                            <select name="selectFormacao">
-                                <option value="Cursando">Cursando</option>
-                                <option value="Concluido">Concluido</option>
-                            </select>
-                            <input type="button" name="add" value="Adicionar" onclick="addLineFormacao()"><br>
-                        </div>
-                    </form>
-                    <form name="formacao" label="Formacao Academica" onsubmit="return(validate());" action="teste.php"
-                        method="POST">
-
-                        <div id="formExperiencia">
-                            <label>Empresa</label>
-                            <input type="text" name="empresa[]">
-                            <label>Cargo</label>
-                            <input type="text" name="cargo[]">
-                            <label>Periodo</label>
-                            <div class="date">
-                                <label for="dataInicio">Informe a data de Inicio</label>
-                                <input type="date" name="dataInicio" id="dataInicio">
-                            </div>
-                            <div class="date">
-                                <label for="dataFim">Informe a data de dataFim</label>
-                                <input type="date" name="dataFim" id="dataFim">
-                            </div>
-                            <input type="button" name="add" value="Adicionar" onclick="addLineExperiencia()"><br>
-                        </div>
-                    </form>
-                    <input type="submit" name="submit" id="submit">
-            </fieldset>
-        </form>
-    </div>
-    <script src="scripts/scripts.js"></script>
+                <div id="formExperiencia">
+                    <input type="text" name="empresa[]" class="inputUser">
+                    <label class="labelFormExperiencia">Empresa</label>
+                    <br><br>
+                    <input type="text" name="cargo[]" class="inputUser">
+                    <label class="labelFormExperiencia">Cargo</label>
+                    <br><br>
+                    <label>Periodo</label>
+                    <div class="date">
+                        <label for="dataInicio">Informe a data de Inicio</label>
+                        <input type="date" name="dataInicio" id="dataInicio">
+                    </div>
+                    <br><br>
+                    <div class="date">
+                        <input type="date" name="dataFim" id="dataFim">
+                        <label for="dataFim">Informe a data de dataFim</label>
+                    </div>
+                    <br><br>
+                    <input type="button" name="add" value="Adicionar" onclick="addLineExperiencia()"><br>
+                </div>
+            </form>
+            <br><br>
+            <input type="submit" name="submit" id="submit">
+        </fieldset>
+    </form>
+</div>
+<script src="scripts/scripts.js"></script>
 </body>
 
 </html>

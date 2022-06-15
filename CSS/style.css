@@ -43,8 +43,7 @@ legend{
     width: 100%;
 }
 
-.inputUser:focus ~ .labelInput,
-.inputUser:valid ~ .labelInput{
+.inputUser:focus ~ .labelInput{
     top: -20px;
     font-size: 12px;
 }
@@ -53,11 +52,6 @@ legend{
     position: relative;
 }
 
-.inputUser:focus ~ .labelFormFormacao,
-.inputUser:valid ~ .labelFormFormacao {
-    top: -20px;
-    font-size: 12px;
-}
 .labelFormFormacao{
     position: absolute;
     pointer-events: none;
@@ -74,12 +68,6 @@ legend{
 
 .formExperiencia{
     position: relative;
-}
-
-.inputUser:focus ~ .labelFormExperiencia,
-.inputUser:valid ~ .labelFormExperiencia {
-    top: -20px;
-    font-size: 12px;
 }
 
 .labelFormExperiencia{
