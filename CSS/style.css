@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body{
+    font-family:'Roboto', sans-serif;
+    background-image: linear-gradient(90deg, rgba(110,222,255,1) 4%, rgba(7,193,231,1) 35%, rgba(0,152,189,1) 85%);
+}
+
+.box{
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+fieldset{
+    border: 3px solid whitesmoke;
+}
+
+legend{
+    color: black;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+}
+
+.formFormacao{
+    position: relative;
+}
+
+.inputUser:focus ~ .labelFormFormacao,
+.inputUser:valid ~ .labelFormFormacao {
+    top: -20px;
+    font-size: 12px;
+}
+.labelFormFormacao{
+    position: absolute;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.formExperiencia{
+    position: relative;
+}
+
+.inputUser:focus ~ .labelFormExperiencia,
+.inputUser:valid ~ .labelFormExperiencia {
+    top: -20px;
+    font-size: 12px;
+}
+
+.labelFormExperiencia{
+    position: absolute;
+    pointer-events: none;
+    transition: 1s;
+}
