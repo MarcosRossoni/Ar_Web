@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Curriculo Online</title>
@@ -8,7 +7,7 @@
 </head>
 <body>
 <div class="box">
-    <form action="">
+    <form action="modeloPrint.php" method="post" target="_blank" enctype="multipart/form-data">
         <fieldset>
             <legend><b>Curriculo Online</b></legend>
             <br><br>
@@ -49,7 +48,7 @@
             </div>
             <br><br>
             <div class="select">
-                <label>Estado</label>
+                <label for="estado">Estado</label>
                 <select name="select">
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
@@ -115,6 +114,11 @@
                 <label for="github" class="labelInput">Github</label>
             </div>
             <br><br>
+            <div class="form-group">
+                <label for="resumo">Resumo</label>
+                <textarea class="form-control" name="resumo" id="resumo" rows="10" cols="80"></textarea>
+            </div>
+            <br><br>
             <div class="imputBox" id="div-formacoes">
                 <h4 class="card-title">Formação</h4>
                 <button class="btn btn-sm right" id="btn-formacao" title="Adicionar formação">Adicionar formação</button>
@@ -125,9 +129,12 @@
                 <button class="btn btn-sm right" id="btn-experiencia" title="Adicionar experiencia">Adicionar experiencia</button>
             </div>
             <br><br>
-            <input type="submit" name="submit" id="submit">
         </fieldset>
     </form>
+</div>
+<div class="card-footer">
+    <button class="btn btn-primary" type="submit">Gerar currículo</button>
+    <button class="btn btn-default" type="reset">Limpar campos</button>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="scripts/index.js"></script>

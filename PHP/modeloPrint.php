@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Currículo | Modelo 3</title>
+    <title>Currículo</title>
     <link rel="stylesheet" href="css/modelo3.css">
 </head>
 <body>
@@ -15,9 +15,14 @@
             <p><span>Nacionalidade: </span><?= $dados['nacionalidade']; ?></p>
             <p><span>Data de Nascimento: </span><?= $dados['data-nascimento']; ?></p>
             <p><span>Estado Civil: </span><?= $dados['estado-civil']; ?></p>
+            <p><span>Cidade: </span><?= $dados['cidade']; ?></p>
+            <p><span>Estado: </span><?= $dados['estado']; ?></p>
+            <p><span>Nº: </span><?= $dados['numero-predial']; ?></p>
+            <p><span>Bairro: </span><?= $dados['bairro']; ?></p>
             <p><span>Telefone(s): </span><?= $dados['telefone']; ?></p>
             <p><span>E-mail: </span><?= $dados['email']; ?></p>
-            <p><span>Endereço: </span><?= $dados['endereco']; ?></p>
+            <p><span>Linkedin: </span><?= $dados['linkedin']; ?></p>
+            <p><span>Github: </span><?= $dados['github']; ?></p>
         </section>
         <section class="conteudo">
             <h3>Resumo</h3>
@@ -47,9 +52,9 @@
                     <?php for($i = 0; $i < sizeof($dados['experiencias']['cargos']); $i++) { ?>
                         <li>
                             <div>
-                                <h4><?= $dados['experiencias']['cargos'][$i] ?></h4>
-                                <p><?= $dados['experiencias']['empresas'][$i] ?></p>
-                                <p><?= $dados['experiencias']['inicios'][$i] ?> a <?= $dados['experiencias']['fins'][$i] ?></p>
+                                <h4><?= $dados['experiencias']['empresa'][$i] ?></h4>
+                                <p><?= $dados['experiencias']['cargo'][$i] ?></p>
+                                <p><?= $dados['experiencias']['dataInicio'][$i] ?> a <?= $dados['experiencias']['dataFim'][$i] ?></p>
                             </div>
                         </li>
                     <?php } ?>
