@@ -1,9 +1,9 @@
 # Atividade Reflexiva Fundamentos de Programação para Internet
 
-Aluno: Marcos Antonio Prigol Rossoni \n
-RA: 09029275
-Curso: Analise e Desenvolvimento de Sistemas
-Polo: Francisco Beltrão
+- Aluno: Marcos Antonio Prigol Rossoni
+- RA: 09029275
+- Curso: Analise e Desenvolvimento de Sistemas
+- Polo: Francisco Beltrão
 
 # Detalhamento do Trabalho
 
