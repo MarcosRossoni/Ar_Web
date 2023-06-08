@@ -1,222 +1,220 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Currículo Online</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Currículo Online</a>
-        </nav>
-        <main class="container" style="margin-top:20px">
-            <form action="PHP/geraCurriculo.php" method="post" target="_blank" enctype="multipart/form-data">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                              </svg>
-                            <span>Dados Pessoais</span> 
-                        </h4>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="nome">Nome</label>
-                                        <input type="text" class="form-control" name="nome" id="nome">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="cargo">Cargo Pretendido</label>
-                                        <input type="text" class="form-control" name="cargo" id="cargo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="nacionalidade">Nacionalidade</label>
-                                        <input type="text" class="form-control" name="nacionalidade" id="nacionalidade">
-                                    </div>
-                                </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="data-nascimento">Data de Nascimento</label>
-                                    <input type="date" class="form-control" name="data-nascimento" id="data-nascimento">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <label for="estado-civil">Estado Civil</label>
-                                <select class="form-control" name="estado-civil" id="estado-civil">
-                                    <option value="Casado">Casado</option>
-                                    <option value="Solteiro">Solteiro</option>
-                                    <option value="Uniao Estavel">Uniao Estavel</option>
-                                    <option value="Divorciado">Divorciado</option>
-                                    <option value="Viuvo">Viuvo</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
-                                <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-                            </svg>
-                            <span>Endereço</span>
-                        </h4>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="cidade">Cidade</label>
-                                    <input type="text" class="form-control" name="cidade" id="cidade">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <label for="estado">Estado</label>
-                                <select class="form-control" name="estado" id="estado">
-                                    <option value="acre">Acre</option>
-                                    <option value="alagoas">Alagoas</option>
-                                    <option value="amapa">Amapá</option>
-                                    <option value="amazonas">Amazonas</option>
-                                    <option value="bahia">Bahia</option>
-                                    <option value="ceara">Ceara</option>
-                                    <option value="distrito federal">Distrito Federal</option>
-                                    <option value="espirito santo">Espírito Santo</option>
-                                    <option value="goias">Goiás</option>
-                                    <option value="maranhao">Maranhão</option>
-                                    <option value="mato grosso">Mato Grosso</option>
-                                    <option value="mato grosso do sul">Mato Gorsso do Sul</option>
-                                    <option value="minas gerais">Minas Gerais</option>
-                                    <option value="para">Pará</option>
-                                    <option value="paraiba">Paraíba</option>
-                                    <option value="parana">Paraná</option>
-                                    <option value="pernanbuco">Pernambuco</option>
-                                    <option value="paui">Piauí</option>
-                                    <option value="rio de janeiro">Rio de Janeiro</option>
-                                    <option value="rio grande do norte">Rio Grande do Norte</option>
-                                    <option value="rio grande do sul">Rio Grande do Sul</option>
-                                    <option value="rondonia">Rondônia</option>
-                                    <option value="roraima">Roraima</option>
-                                    <option value="santa catarina">Santa Catarina</option>
-                                    <option value="sao paulo">São Paulo</option>
-                                    <option value="sergipe">Sergipe</option>
-                                </select>
-                            </div> 
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="endereco">Endereço</label>
-                                    <input type="text" class="form-control" name="endereco" id="endereco">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="bairro">Bairro</label>
-                                    <input type="text" class="form-control" name="bairro" id="bairro">
-                                </div>
-                            </div>      
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                              </svg>
-                            <span>Contato</span>
-                        </h4>   
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="telefone">Telefone</label>
-                                    <input type="text" class="form-control" name="telefone" id="telefone">
-                                </div>
-                            </div> 
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="email">E-mail</label>
-                                    <input type="email" class="form-control" name="email" id="email">
-                                </div>
-                            </div> 
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="linkedin">Linkedin</label>
-                                    <input type="text" class="form-control" name="linkedin" id="linkedin">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="github">Github</label>
-                                    <input type="text" class="form-control" name="github" id="github">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
-                                <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z"/>
-                              </svg>
-                            <span>Descrição Pessoal</span>
-                        </h4>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currículo Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Currículo Online</a>
+</nav>
+<main class="container" style="margin-top:20px">
+    <form action="PHP/geraCurriculo.php" method="post" target="_blank" enctype="multipart/form-data">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    <span>Dados Pessoais</span>
+                </h4>
+                <div class="row">
+                    <div class="col">
                         <div class="form-group">
-                            <label for="resumo">Resumo</label>
-                            <textarea class="form-control" name="resumo" id="resumo"></textarea>
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="cargo">Cargo Pretendido</label>
+                            <input type="text" class="form-control" name="cargo" id="cargo">
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body" id="div-formacoes">
-                        <h4 class="card-title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-                              </svg>
-                            <span>Formaoção</span>
-                        </h4>
-                        <button class="btn btn-sm right" id="btn-adicionar-formacao" title="Adicionar formação">Adicionar formação</button>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="nacionalidade">Nacionalidade</label>
+                            <input type="text" class="form-control" name="nacionalidade" id="nacionalidade">
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body" id="div-experiencias">
-                        <h4 class="card-title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
-                                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
-                              </svg>
-                           <span>Experiência</span>
-                        </h4>
-                        <button class="btn btn-sm right" id="btn-adicionar-experiencia" title="Adicionar experiência">Adicionar experiência</button>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="data-nascimento">Data de Nascimento</label>
+                            <input type="date" class="form-control" name="data-nascimento" id="data-nascimento">
+                        </div>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary" type="submit" aria-label="Gerar Curriculo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 -2 16 16">
-                            <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
-                            <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-                        </svg>
-                        <span>Emitir Curriculo</span> 
-                    </button>
-                    <button class="btn btn-default" type="reset">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 -2 16 16">
-                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-                        </svg>
-                        <span>Limpar campos</span>
-                    </button>
+                    <div class="col">
+                        <label for="estado-civil">Estado Civil</label>
+                        <select class="form-control" name="estado-civil" id="estado-civil">
+                            <option value="Casado">Casado</option>
+                            <option value="Solteiro">Solteiro</option>
+                            <option value="Uniao Estavel">Uniao Estavel</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="Viuvo">Viuvo</option>
+                        </select>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                    </svg>
+                    <span>Endereço</span>
+                </h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" name="cidade" id="cidade">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="estado">Estado</label>
+                        <select class="form-control" name="estado" id="estado">
+                            <option value="acre">Acre</option>
+                            <option value="alagoas">Alagoas</option>
+                            <option value="amapa">Amapá</option>
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>
+                            <option value="ceara">Ceara</option>
+                            <option value="distrito federal">Distrito Federal</option>
+                            <option value="espirito santo">Espírito Santo</option>
+                            <option value="goias">Goiás</option>
+                            <option value="maranhao">Maranhão</option>
+                            <option value="mato grosso">Mato Grosso</option>
+                            <option value="mato grosso do sul">Mato Gorsso do Sul</option>
+                            <option value="minas gerais">Minas Gerais</option>
+                            <option value="para">Pará</option>
+                            <option value="paraiba">Paraíba</option>
+                            <option value="parana">Paraná</option>
+                            <option value="pernanbuco">Pernambuco</option>
+                            <option value="paui">Piauí</option>
+                            <option value="rio de janeiro">Rio de Janeiro</option>
+                            <option value="rio grande do norte">Rio Grande do Norte</option>
+                            <option value="rio grande do sul">Rio Grande do Sul</option>
+                            <option value="rondonia">Rondônia</option>
+                            <option value="roraima">Roraima</option>
+                            <option value="santa catarina">Santa Catarina</option>
+                            <option value="sao paulo">São Paulo</option>
+                            <option value="sergipe">Sergipe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" name="endereco" id="endereco">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" name="bairro" id="bairro">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <span>Contato</span>
+                </h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" name="telefone" id="telefone">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="linkedin">Linkedin</label>
+                            <input type="text" class="form-control" name="linkedin" id="linkedin">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="github">Github</label>
+                            <input type="text" class="form-control" name="github" id="github">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
+                        <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z"/>
+                    </svg>
+                    <span>Descrição Pessoal</span>
+                </h4>
+                <div class="form-group">
+                    <label for="resumo">Resumo</label>
+                    <textarea class="form-control" name="resumo" id="resumo"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body" id="div-formacoes">
+                <h4 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                    </svg>
+                    <span>Formaoção</span>
+                </h4>
+                <button class="btn btn-sm right" id="btn-adicionar-formacao" title="Adicionar formação">Adicionar formação</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body" id="div-experiencias">
+                <h4 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                    </svg>
+                    <span>Experiência</span>
+                </h4>
+                <button class="btn btn-sm right" id="btn-adicionar-experiencia" title="Adicionar experiência">Adicionar experiência</button>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary" type="submit" aria-label="Gerar Curriculo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 -2 16 16">
+                    <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+                    <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                </svg>
+                <span>Emitir Curriculo</span>
+            </button>
+            <button class="btn btn-default" type="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 -2 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+                <span>Limpar campos</span>
+            </button>
         </div>
     </form>
 </main>
